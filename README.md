@@ -15,6 +15,8 @@
 * E1: 0.352V 对应 0.704A
 
 # firmware Marlin-2.1.3-b2_MKS Gen LV1.0.hex
+* 刷机COM1改为自己主板的串口号
+* ```avrdude "-Cavrdude.conf" -v -V -patmega2560 -cwiring "-PCOM1" -b115200 -D "-Uflash:w:Marlin-2.1.3-b2_MKS Gen LV1.0.hex:i"```
 * 启用线性提前功能
 * 三点调平坐标 X239 Y219,X65 Y219,X239 Y2
 * TFT35 固件为MKS官网最新 V1.0.8
